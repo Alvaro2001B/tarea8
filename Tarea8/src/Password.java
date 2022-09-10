@@ -1,31 +1,33 @@
 import java.security.SecureRandom;
 import java.util.Random;
-
+/**
+ * TAREA 8
+ * @author Alvaro Benitez Carmona
+ *
+ */
 public class Password {
 
 	private float longitud=8;
 	private String contraseña;
-	
+	/**
+	 * Constructor por defecto
+	 */
 	public Password() {
 		contraseña=null;
 	}
+	/**
+	 * Constructor con parametros, generamos una contraseña aleatoria. 
+	 * @param longitud
+	 */
 	public Password(int longitud) {
 		this.longitud=longitud;
 		this.contraseña=generarContraseña(longitud);
 	}
-	
-	public float getLongitud() {
-		return longitud;
-	}
-	public void setLongitud(float longitud) {
-		this.longitud = longitud;
-	}
-	public String getContraseña() {
-		return contraseña;
-	}
-	public void setContraseña(String contraseña) {
-		this.contraseña = contraseña;
-	}
+	/**
+	 * Metodo que genera una contraseña aleatoria segun la longitud.
+	 * @param longitud Longitud de la contraseña.
+	 * @return Devuelve una contraseña aleatoria. 
+	 */
 	private String generarContraseña(int longitud) {
 		//Este es el rango para crear la contraseña
 		final String chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";

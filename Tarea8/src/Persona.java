@@ -1,4 +1,8 @@
-
+/**
+ * TAREA 8
+ * @author Alvaro Benitez Carmona
+ *
+ */
 public class Persona {
 
 	private String nombre, DNI, sexo;

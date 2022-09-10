@@ -1,4 +1,8 @@
-
+/**
+ * TAREA 8
+ * @author Alvaro Benitez Carmona
+ *
+ */
 public class Electrodomesticos {
 	private float precioBase, peso;
 	private String color, consumoEnergetico;
@@ -11,89 +15,38 @@ public class Electrodomesticos {
 	static final float precio =100;
 	static final float pesoIni = 5;
 	
-	
+	/**
+	 * Constructor por defecto
+	 */
 	public Electrodomesticos(){
 		this.precioBase=precio;
 		this.color=blanco;
 		this.peso=pesoIni;
 		this.consumoEnergetico=consumoF;
 	}
-	
+	/**
+	 * Constructor que se pasa por parametro el precio y el peso
+	 * @param precio 
+	 * @param peso
+	 */
 	public Electrodomesticos(Float precio,Float peso){
 		this.precioBase=precio;
 		this.color=blanco;
 		this.peso=peso;
 		this.consumoEnergetico=consumoF;
 	}
+	/**
+	 * Constructor con todo por parametro 
+	 * @param precio
+	 * @param color
+	 * @param peso
+	 * @param consumo
+	 */
 	public Electrodomesticos(Float precio,String color, Float peso, String consumo){
 		this.precioBase=precio;
 		this.color=color;
 		this.peso=peso;
 		this.consumoEnergetico=consumo;
-	}
-
-	public float getPrecioBase() {
-		return precioBase;
-	}
-
-	public void setPrecioBase(float precioBase) {
-		this.precioBase = precioBase;
-	}
-
-	public float getPeso() {
-		return peso;
-	}
-
-	public void setPeso(float peso) {
-		this.peso = peso;
-	}
-
-	public String getColor() {
-		return color;
-	}
-
-	public void setColor(String color) {
-		this.color = color;
-	}
-
-	public String getConsumoEnergetico() {
-		return consumoEnergetico;
-	}
-
-	public void setConsumoEnergetico(String consumoEnergetico) {
-		this.consumoEnergetico = consumoEnergetico;
-	}
-
-	public static String getBlanco() {
-		return blanco;
-	}
-
-	public static String getNegro() {
-		return negro;
-	}
-
-	public static String getRojo() {
-		return rojo;
-	}
-
-	public static String getAzul() {
-		return azul;
-	}
-
-	public static String getGris() {
-		return gris;
-	}
-
-	public static String getConsumof() {
-		return consumoF;
-	}
-
-	public static float getPrecio() {
-		return precio;
-	}
-
-	public static float getPesoini() {
-		return pesoIni;
 	}
 	
 }
